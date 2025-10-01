@@ -46,6 +46,7 @@ public class IntroSwing {
         boton.addActionListener( (e) -> {
             String ruta = texto.getText();
             Path path = Path.of(ruta);
+            modelo.clear();
             modelo.addAll(listarArchivos(path));
         });
 
